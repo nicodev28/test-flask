@@ -10,10 +10,6 @@ jobs:
     steps:
       - name: import du pépôt
         uses: actions/checkout@v4
-      - name: python version
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.10'
       - name: install psycopg
         run: sudo apt install -y python3-psycopg2
       - name: pip update
