@@ -2,6 +2,7 @@ name: Deploiement flask sur aws
 
 on:
   push:
+  workflow_dispatch:
 
 jobs:
   deploy:
