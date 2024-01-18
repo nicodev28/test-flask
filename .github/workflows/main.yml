@@ -1,0 +1,19 @@
+name: Deploiement flask sur aws
+
+on:
+  push:
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+    steps:
+      - name: import du pépôt
+        uses: actions/checkout@v4
+      - name: python version
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - name: Installation des dépendences
+        run: pip install -r requirements.txt
+      - name: Deploiement
+        run: run flask
