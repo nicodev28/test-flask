@@ -1,0 +1,6 @@
+<h1> Notes des étudiants </h1>
+{% for student in students %}
+<ul>        
+        <li><i style="font-size: 30px">La note de {{ student[1] }} {{ student[2] }} est de {{ student[3] }} </i></li>
+</ul>
+{% endfor %}
